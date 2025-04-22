@@ -1,0 +1,282 @@
+.savings-container {
+    min-height: 100vh;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+.savings-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 32px;
+    text-align: center; /* Center text */
+}
+
+.savings-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 24px;
+    text-align: center; /* Center text */
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+    justify-content: center; /* Center tabs */
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #064e3b;
+    color: white;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tab:hover {
+    background-color: #065f46;
+}
+
+.tab.active {
+    background-color: #047857;
+}
+
+.tab .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Add max-width for better layout */
+    margin: 0 auto; /* Center the content container */
+}
+
+/* Accounts Section */
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    justify-items: center; /* Center grid items */
+}
+
+.account-card {
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width within grid */
+    text-align: center; /* Center text content */
+}
+
+.account-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center; /* Center details */
+}
+
+.detail-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Add gap between elements */
+}
+
+.detail-row span:first-child {
+    color: #4b5563;
+}
+
+.detail-row .rate {
+    font-weight: bold;
+    color: #064e3b;
+}
+
+/* Goals Section */
+.goals-section {
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    width: 100%;
+}
+
+.goal-item {
+    margin-bottom: 24px;
+    text-align: center; /* Center goal items */
+}
+
+.goal-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.goal-header .amount {
+    font-weight: bold;
+    color: #064e3b;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto; /* Center progress bar */
+}
+
+.progress {
+    height: 100%;
+    background-color: #059669;
+    transition: width 0.3s ease;
+}
+
+/* Budget Section */
+.budget-form {
+    max-width: 500px;
+    margin: 0 auto; /* Center the form */
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    text-align: center; /* Center form elements */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #064e3b;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s;
+    text-align: center; /* Center input text */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+}
+
+/* Learn Section */
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    justify-items: center; /* Center grid items */
+}
+
+.learn-card {
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    width: 100%;
+    text-align: center; /* Center text content */
+}
+
+.learn-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.learn-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.learn-header h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #064e3b;
+    text-align: center;
+}
+
+.learn-card p {
+    color: #4b5563;
+    text-align: center;
+}
+
+/* Buttons */
+.calculate-btn,
+.setup-btn {
+    background-color: #064e3b;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+    margin: 0 auto; /* Center buttons */
+}
+
+.calculate-btn:hover,
+.setup-btn:hover {
+    background-color: #065f46;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .savings-container {
+        padding: 16px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab {
+        flex: 1 1 auto;
+        min-width: 120px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .accounts-grid,
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-form,
+    .auto-save-form {
+        max-width: 100%;
+    }
+}

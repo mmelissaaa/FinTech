@@ -1,0 +1,162 @@
+.key_container {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.key_main_title {
+  color: #00ff8c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  text-shadow: 0 0 10px rgba(0, 255, 140, 0.3);
+}
+
+.key_content_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.key_term_display {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.key_term_card {
+  background-color: #111111;
+  border: 1px solid rgba(0, 255, 140, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(var(--glow-color), 0.1);
+  transition: all 0.3s ease;
+}
+
+.key_term_title {
+  color: #00ff8c;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px rgba(0, 255, 140, 0.3);
+}
+
+.key_definition_label {
+  color: #00ff8c;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.key_definition_text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.key_learn_more {
+  color: #00ff8c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.key_learn_more:hover {
+  text-shadow: 0 0 8px rgba(0, 255, 140, 0.5);
+}
+
+.key_related_terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.key_term_tag {
+  background-color: #111111;
+  color: #00ff8c;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 140, 0.2);
+}
+
+.key_term_tag:hover {
+  background-color: rgba(0, 255, 140, 0.1);
+}
+
+.key_active_term {
+  background-color: rgba(0, 255, 140, 0.15);
+  box-shadow: 0 0 15px var(--glow-color);
+  border-color: var(--glow-color);
+}
+
+.key_nav_button {
+  background: rgba(0, 255, 140, 0.1);
+  border: 1px solid rgba(0, 255, 140, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.key_nav_button:hover {
+  background-color: rgba(0, 255, 140, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 140, 0.3);
+}
+
+@media (max-width: 768px) {
+  .key_container {
+    padding: 1rem;
+  }
+
+  .key_main_title {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+  .key_term_card {
+    padding: 1.5rem;
+  }
+
+  .key_term_title {
+    font-size: 1.5rem;
+  }
+
+  .key_related_terms {
+    gap: 0.5rem;
+  }
+
+  .key_term_tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Animation for glow effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--glow-color);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--glow-color);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--glow-color);
+  }
+}

@@ -1,0 +1,161 @@
+/* PersonalLoans.css */
+.personal-loans {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.main-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.tab {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #f5f5f5;
+  color: #666;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: #e0e0e0;
+}
+
+.tab.active {
+  background: #2e8b57;
+  color: white;
+}
+
+/* Content Sections */
+.section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+/* Definition Section */
+.definition-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.definition-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.common-uses ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.common-uses li {
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.common-uses li::before {
+  content: "•";
+  color: #2e8b57;
+  margin-right: 8px;
+}
+
+/* Loan Types Section */
+.loan-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.loan-type-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loan-type-card:hover,
+.loan-type-card.active {
+  border-color: #2e8b57;
+  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.15);
+}
+
+.loan-type-card h3 {
+  color: #2e8b57;
+  margin-bottom: 12px;
+}
+
+.loan-type-card p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.loan-type-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.loan-type-card li {
+  padding: 8px 0;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.loan-type-card li::before {
+  content: "✓";
+  color: #2e8b57;
+  margin-right: 8px;
+}
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+}

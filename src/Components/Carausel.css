@@ -1,0 +1,21 @@
+/* .carausel {
+  height: 20%;
+}
+
+.carousel-item img {
+    max-height: 0vh; 
+    object-fit: cover; 
+  } 
+*/
+
+.carausel {
+  height: 500px;
+  color: black; /* Set your desired height */
+}
+
+/* Make sure the images maintain aspect ratio and cover the container */
+.carousel-item img {
+  height: 500px; /* Same height as carousel */
+  object-fit: cover;
+  /* This ensures images cover the area without distortion */
+}

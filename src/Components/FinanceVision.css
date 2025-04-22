@@ -1,0 +1,135 @@
+/* Container styles */
+.finance-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #4ade80;
+}
+
+/* Image section styles */
+.image-section {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance-image {
+  max-width: 500px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.2);
+}
+
+/* Content section styles */
+.content-section {
+  width: 50%;
+  padding: 2rem;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #4ade80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+}
+
+/* Vision cards styles */
+.vision-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vision-card {
+  border: 1px solid #4ade80;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.vision-card:hover {
+  background-color: rgba(74, 222, 128, 0.1);
+  transform: translateX(10px);
+}
+
+.vision-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #4ade80;
+}
+
+.vision-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.vision-card li {
+  color: #86efac;
+  margin-bottom: 0.5rem;
+}
+
+/* Disclaimer styles */
+.disclaimer {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #4ade80;
+  opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .finance-container {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .content-section {
+    width: 100%;
+  }
+
+  .finance-image {
+    max-width: 100%;
+  }
+
+  .vision-card:hover {
+    transform: translateY(5px);
+  }
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vision-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+.content-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-section::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.content-section::-webkit-scrollbar-thumb {
+  background: #4ade80;
+  border-radius: 4px;
+}
+
+.content-section::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}

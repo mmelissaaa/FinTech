@@ -1,0 +1,187 @@
+.loans-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.loans-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #f0fdf4;
+  padding: 20px;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.card-title {
+  color: #166534;
+  font-size: 24px;
+  margin: 0 0 15px 0;
+}
+
+.alert {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.tabs-container {
+  padding: 20px;
+}
+
+.tabs-list {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #dcfce7;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  color: #374151;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  color: #166534;
+}
+
+.tab-button.active {
+  color: #166534;
+  border-bottom-color: #166534;
+  background-color: #f0fdf4;
+}
+
+.tab-content {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Definition Tab Styles */
+.content-section {
+  margin-bottom: 24px;
+}
+
+.content-section h3 {
+  color: #166534;
+  margin-bottom: 12px;
+}
+
+.content-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content-section li {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.key-terms p {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+/* Calculator Tab Styles */
+.calculator-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #166534;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #dcfce7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #166534;
+  box-shadow: 0 0 0 2px rgba(22, 101, 52, 0.1);
+}
+
+.calculate-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #166534;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #14532d;
+}
+
+.result-summary {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f0fdf4;
+  border-radius: 4px;
+}
+
+.result-summary h3 {
+  color: #166534;
+  margin-bottom: 12px;
+}
+
+.result-summary p {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+/* Types Tab Styles */
+.loan-type {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.loan-type:last-child {
+  border-bottom: none;
+}
+
+.loan-type h3 {
+  color: #166534;
+  margin-bottom: 8px;
+}
+
+.loan-type p {
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Features Tab Styles */
+.feature {
+  margin-bottom: 24px;
+  padding: 16px;
+}

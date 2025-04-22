@@ -1,0 +1,275 @@
+/* Base styles */
+:root {
+    --primary-green: #1a472a;
+    --hover-green: #1c5231;
+    --dark-bg: #111827;
+    --border-color: #1a472a;
+    --text-gray: #9ca3af;
+    --star-color: #eab308;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .youth-learning {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to bottom, var(--primary-green), #000);
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+  }
+  
+  /* Courses Section */
+  .courses-section {
+    padding: 3rem 0;
+  }
+  
+  .get-started-button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: #1B4D3E;  /* Forest green color matching the Book a Session buttons */
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .get-started-button:hover {
+    background-color: #163b30;  /* Slightly darker shade for hover state */
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .nav-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-button:hover {
+    background-color: var(--hover-green);
+  }
+  
+  .nav-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Grid Layouts */
+  .courses-grid,
+  .mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .courses-grid,
+    .mentors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .courses-grid,
+    .mentors-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Course Cards */
+  .course-card {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Mentors Section */
+  .mentors-section {
+    padding: 3rem 0;
+    background-color: rgba(26, 71, 42, 0.2);
+  }
+  
+  .mentors-section h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .mentor-card {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .mentor-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mentor-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .mentor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mentor-info h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .mentor-info p {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+  }
+  
+  /* Common Components */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .star {
+    color: var(--star-color);
+  }
+  
+  .card-footer {
+    margin-top: 1rem;
+  }
+  
+  .book-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .book-button:hover {
+    background-color: var(--hover-green);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .course-card,
+  .mentor-card {
+    animation: fadeIn 0.3s ease-out;
+  }

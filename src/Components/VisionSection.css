@@ -1,0 +1,125 @@
+.vision-container {
+  background-color: #111111;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.vision-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #22c55e; /* bright green */
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .vision-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vision-card {
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(34, 197, 94, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+.vision-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #22c55e; /* bright green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #111111;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: greenyellow; /* bright green */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #e5e5e5; /* light gray */
+  text-align: center;
+  line-height: 1.6;
+}
+
+.values-list {
+  color: #e5e5e5; /* light gray */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.values-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #22c55e; /* bright green */
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 5px rgba(34, 197, 94, 0.3);
+}
+
+/* Optional: Add smooth transitions */
+.vision-card,
+.icon-circle {
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add hover effects on icons */
+.vision-card:hover .icon-circle {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+/* Optional: Add hover effect on bullets */
+.values-item:hover .bullet {
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+}
+.cardtitle {
+  color: red;
+}

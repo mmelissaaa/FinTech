@@ -1,0 +1,211 @@
+:root {
+  --primary-green: #00ff84;
+  --primary-black: #0a0a0a;
+  --secondary-black: #1a1a1a;
+  --hover-green: #00cc6a;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --border-color: #333333;
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: var(--primary-black);
+  color: var(--text-primary);
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--primary-green);
+}
+
+.services-header p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.plan-card {
+  position: relative;
+  background: var(--secondary-black);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card-highlighted {
+  border: 2px solid var(--primary-green);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--primary-green);
+  color: var(--primary-black);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.plan-header {
+  margin-bottom: 24px;
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--primary-green);
+}
+
+.plan-pricing {
+  margin: 16px 0;
+}
+
+.price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.period {
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.plan-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.plan-content {
+  margin-bottom: 24px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.check-icon {
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+}
+
+.plan-specs {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.plan-specs p {
+  margin: 8px 0;
+  color: white;
+}
+
+.plan-footer {
+  margin-top: auto;
+}
+
+.plan-button {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--primary-black);
+  background-color: var(--text-primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.plan-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.button-highlighted {
+  background-color: var(--primary-green);
+  color: var(--primary-black);
+}
+
+.button-highlighted:hover {
+  background-color: var(--hover-green);
+}
+
+/* Add a subtle gradient background effect */
+.plan-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background: linear-gradient(
+    145deg,
+    rgba(0, 255, 132, 0.05) 0%,
+    rgba(0, 255, 132, 0) 100%
+  );
+  pointer-events: none;
+}
+
+/* Add glow effect to highlighted card */
+.plan-card-highlighted::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 14px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 132, 0.1),
+    rgba(0, 255, 132, 0.05)
+  );
+  z-index: -1;
+  filter: blur(8px);
+}

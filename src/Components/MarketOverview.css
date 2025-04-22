@@ -1,0 +1,130 @@
+/* MarketOverview.css */
+.market-overview {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.indicator-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.indicator-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator-info {
+  flex-grow: 1;
+}
+
+.indicator-label {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 4px 0;
+}
+
+.indicator-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.trend-icon {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trend-icon.up {
+  color: #2e8b57;
+  background: rgba(46, 139, 87, 0.1);
+}
+
+.trend-icon.down {
+  color: #2e8b57;
+  background: rgba(46, 139, 87, 0.1);
+}
+
+.trend-icon.stable {
+  color: #2e8b57;
+  background: rgba(46, 139, 87, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .market-overview {
+    padding: 16px;
+  }
+
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .indicator-value {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,202 @@
+/* SectorAnalysis.css */
+.sector-analysis {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 24px;
+}
+
+/* Sector Metrics Styling */
+.sector-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.sector-metric-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sector-metric-card:hover,
+.sector-metric-card.selected {
+  border-color: #2e8b57;
+  box-shadow: 0 2px 8px rgba(46, 139, 87, 0.15);
+}
+
+.sector-metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sector-metric-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.volatility-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.volatility-badge.high {
+  background-color: rgba(46, 139, 87, 0.2);
+  color: #2e8b57;
+}
+
+.volatility-badge.medium {
+  background-color: rgba(46, 139, 87, 0.15);
+  color: #2e8b57;
+}
+
+.volatility-badge.low {
+  background-color: rgba(46, 139, 87, 0.1);
+  color: #2e8b57;
+}
+
+.sector-metric-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.metric-value {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Trends Styling */
+.trends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.trend-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.trend-card.selected {
+  border-color: #2e8b57;
+  box-shadow: 0 2px 8px rgba(46, 139, 87, 0.15);
+}
+
+.trend-header {
+  margin-bottom: 12px;
+}
+
+.trend-header h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.trend-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.trend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trend-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.trend-bullet {
+  color: #2e8b57;
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sector-analysis {
+    padding: 16px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .sector-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .trends-container {
+    grid-template-columns: 1fr;
+  }
+}

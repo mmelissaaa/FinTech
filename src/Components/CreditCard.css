@@ -1,0 +1,137 @@
+
+.page-container {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero-section {
+  width: 100%;
+  height: 930px;
+  position: relative;
+  background: linear-gradient(to bottom, #000000, #1a472a);
+}
+
+.credit-card {
+  width: 1030px;
+  height: 930px;
+  z-index: 999;
+  margin: 0 auto;
+}
+
+.features-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features-subtitle {
+  color: #9ca3af;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-card {
+  background-color: #1a472a;
+  border: 1px solid #2d5a3c;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  background-color: #2d5a3c;
+}
+
+.feature-content {
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-icon-container {
+  padding: 0.75rem;
+  background-color: #2d5a3c;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  color: #9ca3af;
+}
+
+.cta-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.cta-card {
+  background: linear-gradient(to right, #1a472a, #2d5a3c);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #1a472a;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f3f4f6;
+}
+
+.chevron-icon {
+  color: #9ca3af;
+}
